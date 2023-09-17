@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
+body{
+    font-family: 'El Messiri';
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+    direction: rtl;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+main > section{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+#header{
+    background-color: #353637;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-bottom: 3px solid #32a0c2;
+    padding: 0px 120px;
+}
+#branding h1{
+    font-size: 28px;
+}
+nav > ul{
+    margin-top: 0;
+    list-style-type: none;
+}
+#header a{
+    color: #ffffff;
+    text-decoration: none;
+}
+nav > ul > li{
+    float: right;
+    margin-left: 15px;
+}
+li a{
+    text-decoration: none;
+    color: white;
+
+}
+#header .highlight , #header .current a {
+    color: #32a0c2;
+}
+#showcase{
+    background: url(../img/image.jpg) no-repeat center;
+    min-height: 531px;
+    background-size: cover;
+    text-align: center;
+    color: #ffffff;
+
+}
+#showcase h1{
+    margin-top: 174px;
+    font-size: 50px;
+    margin-bottom: 29px;
+}
+#showcase p {
+    font-size: 20px;
+}
+#newsletter{
+    background: #353637;
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 10px 120px;
+}
+#newsletter h1{
+    float: right;
+}
+#newsletter form{
+    float: left;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 8px;
+
+}
+#newsletter input[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+
+}
+.button{
+    height: 38px;
+    background: #cccccc;
+    padding:0px 20px;
+    color: #353637;
+
+}
+#boxes{
+    display: flex;
+    margin-top: 20px;
+    padding: 55px 100px;
+    flex-flow: row ;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+#boxes .box{
+    text-align: center;
+    margin-left: 10px;
+}
+@media(max-width:1020px){
+    #boxes{
+        flex-direction: column;
+    }
+}
+#footer{
+    padding: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    background: #32a0c2;
+    text-align: center;
+}
